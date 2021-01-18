@@ -1,0 +1,10 @@
+mybatis-plus:
+  global-config:
+    worker-id: 1
+    datacenter-id: 1
+server:
+  port: 6601
+
+socket:
+  host: 127.0.0.1
+  port: 8801

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: xiaobolive-socket
+  cloud:
+    nacos:
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yaml
+        shared-configs: test.yaml,database-config.yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUP
+  profiles:
+    active: prod
+
+
